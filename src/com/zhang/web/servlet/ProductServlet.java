@@ -33,6 +33,8 @@ public class ProductServlet extends BaseServlet {
 			productInfo(request,response);
 		}
 
+
+
 	}
 
 	public void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
