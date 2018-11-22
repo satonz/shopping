@@ -17,14 +17,14 @@
     </filter-mapping>
 
     <!-- 用防护登录权限配置在自动登录的后面 -->
-    <!-- <filter>
+     <!--<filter>
         <filter-name>UserLoginPrivilegeFilter</filter-name>
-        <filter-class>com.itheima.web.filter.UserLoginPrivilegeFilter</filter-class>
+        <filter-class>com.zhang.web.filter.UserLoginPrivilegeFilter</filter-class>
     </filter>
     <filter-mapping>
         <filter-name>UserLoginPrivilegeFilter</filter-name>
         <url-pattern>/privilege/*</url-pattern>
-    </filter-mapping> -->
+    </filter-mapping>-->
 
     <servlet>
         <servlet-name>CallbackServlet</servlet-name>

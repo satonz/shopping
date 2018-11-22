@@ -182,11 +182,7 @@ public class ProductServlet extends BaseServlet {
 
         //判断用户是否已经登录 未登录下面代码不执行
         User user = (User) session.getAttribute("user");
-        if(user==null){
-            //没有登录
-            response.sendRedirect(request.getContextPath()+"/login.jsp");
-            return;
-        }
+
 
 
         //目的：封装好一个Order对象 传递给service层
