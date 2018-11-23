@@ -28,7 +28,7 @@
 	
 	<body>
 		<!--  -->
-		<form id="userAction_save_do" name="Form1" action="${pageContext.request.contextPath}/admin?adminAddProduct" method="post" enctype="multipart/form-data">
+		<form id="userAction_save_do" name="Form1" action="${pageContext.request.contextPath}/admin?method=adminAddProduct" method="post" enctype="multipart/form-data">
 			&nbsp;
 			
 
