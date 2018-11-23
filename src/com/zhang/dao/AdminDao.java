@@ -15,6 +15,7 @@ import java.util.Map;
 
 public class AdminDao {
 
+	//查找所有
 	public List<Category> findAllCategory() throws SQLException {
 		QueryRunner runner = new QueryRunner(DataSourceUtils.getDataSource());
 		String sql = "select * from category";
