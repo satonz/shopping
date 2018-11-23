@@ -22,6 +22,13 @@ import java.util.Date;
 import java.util.Map;
 
 public class UserServlet extends BaseServlet {
+    /**
+     * 用户相关的servlet
+     * @param request
+     * @param response
+     * @throws ServletException
+     * @throws IOException
+     */
 
     //激活用户
     public void active(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {

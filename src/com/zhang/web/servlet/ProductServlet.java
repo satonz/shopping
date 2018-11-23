@@ -42,6 +42,13 @@ public class ProductServlet extends BaseServlet {
 	}
 	 */
 
+    /**
+     * 商品相关的servlet
+     * @param request
+     * @param response
+     * @throws ServletException
+     * @throws IOException
+     */
 
     //获得我的订单
     public void myOrders(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {

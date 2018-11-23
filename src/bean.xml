@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <beans>
+	<!--面向接口编程  解耦合-->
 	<!-- 配置AdminServiceImpl的清单 -->
 	<bean id="adminService" class="com.zhang.service.impl.AdminServiceImpl"></bean>
 	<!-- <bean id="adminService" class="com.itheima.service.impl.AdminServiceImpl2"></bean> -->

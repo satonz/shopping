@@ -22,6 +22,7 @@ public class AdminDao {
 		return runner.query(sql, new BeanListHandler<Category>(Category.class));
 	}
 
+	//保存商品
 	public void saveProduct(Product product) throws SQLException {
 		QueryRunner runner = new QueryRunner(DataSourceUtils.getDataSource());
 		String sql = "insert into product values(?,?,?,?,?,?,?,?,?,?)";
@@ -30,12 +31,14 @@ public class AdminDao {
 				product.getIs_hot(),product.getPdesc(),product.getPflag(),product.getCategory().getCid());
 	}
 
+	//查找所有的订单
 	public List<Order> findAllOrders() throws SQLException {
 		QueryRunner runner = new QueryRunner(DataSourceUtils.getDataSource());
 		String sql = "select * from orders";
 		return runner.query(sql, new BeanListHandler<Order>(Order.class));
 	}
 
+	//通过订单ID查找订单详细信息
 	public List<Map<String, Object>> findOrderInfoByOid(String oid) throws SQLException {
 		QueryRunner runner = new QueryRunner(DataSourceUtils.getDataSource());
 		String sql = "select p.pimage,p.pname,p.shop_price,i.count,i.subtotal "+

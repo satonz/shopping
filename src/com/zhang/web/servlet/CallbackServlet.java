@@ -14,6 +14,13 @@ import javax.servlet.http.HttpSession;
 
 
 public class CallbackServlet extends HttpServlet {
+	/**
+	 * 付款的回调servlet
+	 * @param request
+	 * @param response
+	 * @throws ServletException
+	 * @throws IOException
+	 */
 
 	public void doGet(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {

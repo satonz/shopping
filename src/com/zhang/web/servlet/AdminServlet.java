@@ -26,6 +26,13 @@ import java.util.List;
 import java.util.Map;
 
 public class AdminServlet extends BaseServlet {
+    /**
+     * 后台相关的servlet
+     * @param request
+     * @param response
+     * @throws ServletException
+     * @throws IOException
+     */
 
     //增加商品
     public void adminAddProduct(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {

@@ -54,6 +54,7 @@ public class ProductDao {
         return list;
     }
 
+    //通过ID查找商品
     public Product findProductByPid(String pid) throws SQLException {
         QueryRunner runner = new QueryRunner(DataSourceUtils.getDataSource());
         String sql = "select * from product where pid=?";
@@ -83,12 +84,14 @@ public class ProductDao {
 
     }
 
+    //更新收件人地址
     public void updateOrderAdrr(Order order) throws SQLException {
         QueryRunner runner = new QueryRunner(DataSourceUtils.getDataSource());
         String sql = "update orders set address=?,name=?,telephone=? where oid=?";
         runner.update(sql, order.getAddress(),order.getName(),order.getTelephone(),order.getOid());
     }
 
+    //更新订单状态  付款状态
     public void updateOrderState(String r6_Order) throws SQLException {
         QueryRunner runner = new QueryRunner(DataSourceUtils.getDataSource());
         String sql = "update orders set state=? where oid=?";
@@ -96,6 +99,7 @@ public class ProductDao {
     }
 
 
+    //查找所有订单
     public List<Order> findAllOrders(String uid) throws SQLException {
         QueryRunner runner = new QueryRunner(DataSourceUtils.getDataSource());
         String sql = "select * from orders where uid=?";
